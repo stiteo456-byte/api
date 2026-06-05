@@ -1,0 +1,496 @@
+/* de @ import zorgt er voor dat we een extra font family kunnen gebruiken */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Dit reset de css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* De body is het hoofdgedeelte van de webpagina. Alles wat zichtbaar is voor de gebruiker staat meestal binnen de body. Hier stel je vaak algemene stijlen in zoals lettertype, achtergrondkleur, marges, enz. */
+body {
+    font-family: "Montserrat";
+    color: white;
+    background-image: linear-gradient(to bottom right, #096cb3, #525252);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* De header is het bovenste deel van de pagina. Dit bevat meestal de titel, logo of navigatiemenu. */
+header {
+    background-image: linear-gradient(rgb(38, 38, 38), rgb(32, 32, 32));
+    border-bottom: 1px solid rgb(65, 65, 65);
+    height: 10vh;
+    top: 0;
+    z-index: 1000;
+    position: relative;
+}
+/* Dit is de achtergrond foto van de eerste pagina */
+.index-main {
+    background-image:linear-gradient(50deg, rgb(39, 65, 85), rgb(47, 161, 255));
+    background-size: cover;
+    background-position: center;
+}
+
+/* De footer is het onderste deel van de pagina. Hier staan vaak contactgegevens, copyright, links of extra info. */
+footer {
+    background-image: linear-gradient(rgb(38, 38, 38), rgba(32, 32, 32, 0.806));
+    border: 1px solid rgb(65, 65, 65); 
+    height: 10%;
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    color: rgb(181, 181, 181);
+}   
+/* hier staan de namen van de footer in */
+.P1{
+    font-size: small;
+}
+
+/* Dit is de opmaak van de tekst in de header */
+header h2 {
+    font-size: 2rem;
+    position: absolute;
+    right: 0;
+    margin-top: 1%;
+}
+
+/* Dit is de zoek knop in de header */
+.header-a {
+    font-size: 2rem;
+    margin-top: 0.5%;
+    position: absolute;
+    left: 0;
+}
+
+/* Dit zijn de hoofd grid al onze pagina's */
+.main-grids {
+    grid-template-columns: repeat(1, 1fr 4fr);
+    display: grid;
+} 
+
+/* Dit is onze werkende zoekbalk in de header */
+.zoekbalk {
+    background-color: rgb(26, 26, 26);
+    border: 1px solid rgb(65, 65, 65);
+    border-radius: 0.5rem;  
+    width: 25%;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Dit is alle tekst van het invulformulier */
+.invulformulierTekst {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.454);
+    resize: none;
+}
+
+/* Dit is alle tekst in het invul formulier als er nog niks is ingevuld. (Een voorbeeld) */
+.invulformulierTekst::placeholder {
+    color: white;
+}
+
+/* Dit is de achtergrond van de navigatie balk */
+.navigatie {
+    background-image: linear-gradient(rgb(38, 38, 38), rgba(32, 32, 32, 0.806));
+    border-right: 1px solid rgb(65, 65, 65);
+    border-bottom: 1px solid rgb(65, 65, 65);
+}
+/* Dit zijn alle knoppen in navigatie balk */
+.navigatie li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Dit is de plaatsing van de knoppen */
+.navigatie li {
+    padding: 10px;
+    list-style: none;
+}
+/* De main bevat de belangrijkste inhoud van de pagina. Dit is waar de unieke content staat zoals tekst, afbeeldingen, artikels, enz. */
+.main {
+    background-color: rgba(79, 79, 79, 0.644);
+    backdrop-filter: blur(5px);
+    border-radius: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.288);
+    width: 60%;
+    text-align: center;
+    padding: 2rem;
+    margin: 2% auto 2% auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* dit is de main van de pagina informatie */
+.informatie-main {
+    background-color: rgba(39, 39, 39, 0.644);
+    backdrop-filter: blur(5px);
+    border-radius: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.288);
+    width: 60%;
+    text-align: center;
+    padding: 2rem;
+    margin: 1% auto;
+}
+
+/* Dit is de tekst van de pagina informatie */
+.informatie-main p {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}
+
+/* Dit is de knop in de pagina informatie */
+.informatie-main h2 a {
+    text-decoration: none;
+    color: white;
+}
+
+/* dit is de opmaak van de image in de main */
+.main img {
+    width: 35%;
+    border: 2px solid rgb(40, 40, 40);
+    border-radius: 2rem;
+}
+
+/* Dit is de opmaak van de textarea in de header */
+header textarea {
+    background-color: rgb(27, 27, 27);
+    border-width: 2px;
+    border-color: rgb(61, 61, 61);
+    border-radius: 0.5rem 0 0 0.5rem;
+    width: 100%;
+    height: 100%;
+    
+    background-color: transparent;
+    border: none;
+    resize: none;
+    text-align: center;
+    color: white;
+    font-size: large;
+    display: inline-block;
+}
+
+
+
+
+.Hero-Section {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    padding: 4rem 2rem;
+    background: url('https://amincode.com/tm-html/flex-it/assets/images/hero/hero-bg-2.jpg') no-repeat center center/cover;
+}
+
+.Hero-Section .hero-content {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 2rem;
+    text-align: left;
+}
+
+
+.hero-image {
+    width: min(100%, 650px);
+    max-height: 450px;
+    border-radius: 2rem;
+    border: 4px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 24px 90px rgba(0, 0, 0, 0.45);
+    object-fit: cover;
+}
+
+/* Dit verstuurt alle info van het invul formulier weg */
+.VerstuurKnop {
+    gap: 8px;
+    background-color: rgb(64, 99, 198);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+/* Dit is de opmaak van de tabellen van de uurroosters */
+.rooster-tabel {
+  border-collapse: collapse;
+}
+
+/* Dit is de opmaak van de th van de tabel */
+.rooster-tabel th {
+  background-color: rgba(24, 24, 24, 0.621);
+  color: white;
+  padding: 8px 14px;
+  text-align: left;
+}
+
+/* Dit is de opmaak van de td van de tabel */
+.rooster-tabel td {
+  background-color: rgb(33, 47, 70);
+  padding: 12px 24px;
+}
+
+/* Dit is de opmaak van de tr van de tabel */
+.rooster-tabel tr:nth-child(even) td {
+  background-color: rgba(50, 52, 75, 0.539);
+}
+ 
+/* Dit is de opmaak van de tr van de tabel */
+.rooster-tabel tr:hover td {
+  background-color: rgba(0, 0, 0, 0.689);
+}
+
+/* Dit is een stuk van de header in td */
+.sectie-header td {
+  background-color: rgba(0, 12, 49, 0.678);
+  font-weight: bold;
+  color: white;
+}
+
+/* Dit is de spacing tussen de kollomen */
+.kolom-gap {
+  padding: 12px 24px; 
+}
+
+/* dit is alle td's */
+td{
+    vertical-align: top;
+}
+
+/* margin aan de zijkant links */
+.Zijkant{
+    margin-left: 3rem;
+}
+
+/* margin bij de vakken */
+.Vakken{
+    margin-bottom: 0.5rem;
+}
+
+/* Aangeven wanneer een examen 2 uur duurt */
+.duur-2 {
+  color: deepskyblue;
+  font-weight: bold;
+}
+
+/* Aangeven wanneer een examen 4 uur duurt */
+.duur-4 {
+  color: orangered;
+  font-weight: bold;
+}
+/* Opmaak van het formulier */
+input{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.454);
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+/* de kleuren voor de voorbeelden in het invulformulier */
+input::placeholder 
+{
+  color: rgba(255, 255, 255, 0.616);
+}
+/*dit is hoe de foto aangepast is van het hoofdvak electronica voor 5ICW en 6ICW*/
+.FotoElectronica 
+{
+    float: right;
+    padding: 20;
+    position: absolute;
+    top: 7rem;
+    right: 5rem;
+    border: 2px solid gray;
+    border-radius: 2rem;
+    
+}
+/*dit is hoe de foto aangepast is van het hoofdvak computersystemen voor 5ICW en 6ICW*/
+.FotoComputerSystemen
+{
+    float: right;
+    padding: 20;
+    position: absolute;
+    top: 23rem;
+    left: 20rem;
+    border: 2px solid gray;
+    border-radius: 2rem;
+}
+/*dit is hoe de foto aangepast is van het hoofdvak programmeren voor 5ICW en 6ICW*/
+.FotoProgrammeren{
+    float: right;
+    padding: 20;
+    position: absolute;
+    top:38rem;
+    right: 5rem;
+    border: 2px solid gray;
+    border-radius: 2rem;
+}
+/*dit is hoe de foto aangepast is van het hoofdvak computersystemen voor 5ICW en 6ICW*/
+.FotoComputerSystemen img{
+    display: block;
+    border: 2px solid gray;
+    border-radius: 2rem;
+}
+/*dit is hoe de foto aangepast is van het hoofdvak electronica voor 5ICW en 6ICW*/
+.FotoElectronica img 
+{
+    display: block;
+    border: 2px solid gray;
+    border-radius: 2rem;
+}
+/*dit is hoe de foto aangepast is van het hoofdvak STEM ProgrammerenMicrocontrollers voor 5ICW en 6ICW*/
+.FotoSTEMProgrammerenMicrocontrollers{
+    float: right;
+    padding: 20;
+    position: absolute;
+    top: 54rem;
+    left: 20rem;
+    border: 2px solid gray;
+    border-radius: 2rem;
+}
+
+/* video op de home pagina */
+.video video{
+    width: 75%;
+}
+
+/* opstelling van de zoekbox */
+.ZoekBox {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    display: none;
+    left: 40%;
+    top: 75%;
+}
+
+/* Dit is de deel van de opmaak van de zoekbalk */
+.zoekbalk h2 {
+    display: inline-block;  
+}
+
+/* Dit is de deel van de opmaak van de zoekbalk */
+.zoeken-svg {
+    position:absolute;
+}
+
+/* Inhoud van pagina */
+.inhoud {
+    margin: 5%;
+}
+/* het infulformulier */
+fieldset {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 1rem;
+    padding-bottom: 5%
+}
+/* De Main in 5IC en 6IC */
+.VijfICW-main, .ZesICW-main{
+    padding-bottom: 100%;
+}
+/* zet de hoofdvakken goed en netjes onder elkaar */
+.HoofdVak1, .HoofdVak2, .HoofdVak3, .HoofdVak4,
+.Hoofdvak1, .Hoofdvak2, .Hoofdvak3, .Hoofdvak4 {
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    clear: none;
+    float: none;
+}
+ 
+.FotoElectronica, .FotoComputerSystemen, .FotoComputersystemen,
+.FotoProgrammeren, .FotoSTEMProgrammerenMicrocontrollers {
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    float: none;
+}
+ 
+/* Verwijder de oude overdreven padding-bottom */
+.VijfICW-main, .ZesICW-main {
+    padding: 2rem;
+    padding-bottom: 2rem;
+}
+ 
+/* Grid container voor de vakken */
+.vakken-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+ 
+/* Elke kaart: tekst links, foto rechts */
+.vak-kaart {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    background-color: rgba(33, 47, 70, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+ 
+.vak-tekst {
+    flex: 1;
+}
+ 
+.vak-tekst h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+ 
+.vak-tekst p {
+    line-height: 1.8;
+    font-size: 0.95rem;
+    color: rgb(210, 210, 210);
+}
+ 
+.vak-foto {
+    flex-shrink: 0;
+}
+ 
+.vak-foto img {
+    width: 260px;
+    height: 180px;
+    object-fit: cover;
+    border: 2px solid gray;
+    border-radius: 1rem;
+    display: block;
+}
+
+.vak-tekst a {
+    color: rgb(91, 162, 255);
+}
+
+.informatie-hero {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(50deg, rgba(0, 0, 0, 0.541), rgb(47, 161, 255)), url("https://amincode.com/tm-html/flex-it/assets/images/hero/hero-bg-3.jpg");
+}
+    
+.invulformulier-div .main{
+    margin: 20% auto;
+}
